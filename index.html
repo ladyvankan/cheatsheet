@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="./resources/style.css" rel="stylesheet">
+  <title>HTML & CSS Cheatsheets</title>
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <ul>
+        <li><a href="#html">HTML Structure</a></li>
+        <li><a href="#html-tags">HTML Tags</a></li>
+        <li><a href="#css-style">CSS Style</a></li>
+      </ul>
+    </nav>
+    <iframe src="https://giphy.com/embed/KE5qyapWk5nT4hi1Cg" width="150" height="150" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    <h1>Things to Remember</h1>
+  </header>
+
+  <main>
+    <section id="html">
+      <h2>HTML Structure</h2>
+      <table cellspacing="0">
+        <thead>
+          <th class="col-1">Tag</th>
+          <th class="col-2">Description</th>
+          <th class="col-3">Additional Info</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="tag">&lt!DOCTYPE html&gt;</span></td>
+            <td>It tells the browser that your document is written in HTML5.</td>
+            <td>This is the very first line of your document.</td>
+          </tr>
+          <tr>
+            <td><span class="tag">&lt;html&gt;&lt;/html&gt;</span></td>
+            <td>This is the container for all other HTML elements.</td>
+            <td>This is the second/last line of your document.?</td>
+          </tr>
+          <tr>
+            <td><span class="tag">&lt;head&gt;&lt;/head&gt;</span></td>
+            <td>Where all of your document's important info goes, including stylesheets and the title.</td>
+            <td>Get witty with your title; this is what users will see in their browser's tab.</td>
+          </tr>
+          <tr>
+            <td><span class="tag">&lt;body&gt;&lt;/body&gt;</span></td>
+            <td>The almighty holder of what will actually go on your webpage.</td>
+            <td>*hint,hint* If you color your body with <span class="small-tag">background-color</span>, it will affect your entire webpage's background.</td>
+          </tr>
+          <tr>
+            <td><span class="tag">&lt;main&gt;&lt;/main&gt;</span></td>
+            <td>For the *main* content of your page.</td>
+            <td>Like, you know, what your page is actually about.</td>
+          </tr>
+          <tr>
+            <td><span class="tag">&lt;header&gt;&lt;/header&gt;</span></td>
+            <td>A comfy place to store the title of your page on your actual page.</td>
+            <td>Don't forget about your <span class="small-tag">&lt;nav&gt;</span> bar! There's more than enough room for it here too.</td>
+          </tr>
+          <tr>
+            <td><span class="tag">&lt;footer&gt;&lt;/footer&gt;</span></td>
+            <td>Another comfy place, but for anything you want to hide at the bottom of your page.</td>
+            <td>Perfect for copyright, FAQs, or pretty little signatures.</td>
+          </tr>
+          <tr>
+            <td><span class="tag">&lt;section&gt;&lt;/section&gt;</span></td>
+            <td>Use this one when you want to group like-minded information together.</td>
+            <td>Contrary to popular belief, this can also go inside an <span class="small-tag">&lt;article&gt;</span>.</td>
+          </tr>
+          <tr>
+            <td><span class="tag">&lt;article&gt;&lt;/article&gt;</span></td>
+            <td>This is for those paragraphs that carry enough info on their own to be understood without the rest of your page.</td>
+            <td>Think "newspapers" and you'll be golden.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="html-tags">
+      <h2>HTML Tags</h2>
+      <table cellspacing="0">
+        <thead>
+          <th class="col-1">Tag</th>
+          <th class="col-2">Description</th>
+          <th class="col-3">Additional Info</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="tag">&lt;img src="" alt=""&gt;</span></td>
+            <td>Welcome to our very first *self-closing* element! This is the perfect tag for all of your beautiful pictures.</td>
+            <td><span class="small-tag">src=""</span> is where your image lives, while <span class="small-tag">alt=""</span> is two-fold — this is what shows if your picture doesn't load, and it's also what screen readers read.</td>
+          </tr>
+          <tr>
+            <td><span class="tag">&lt;h1&gt;&lt;/h1&gt;</span></td>
+            <td>The best way to display the title on your actual page.</td>
+            <td>"There can be only one."</td>
+          </tr>
+          <tr>
+          <td><span class="tag">&lt;h2&gt;&lt;/h2&gt;</span><br> to <br><span class="tag">&lt;h6&gt;&lt;/h6&gt;</span></td>
+          <td>Also headings, just like <span class="small-tag">&lt;h1&gt;</span>, but not as important.</td>
+          <td>Don't be that guy — or girl — who jumps from <span class="small-tag">&lt;h1&gt;</span> to <span class="small-tag">&lt;h4&gt;</span> just for the difference in font-size.<br>(psst.. use CSS for modifying THAT.)</td>
+          </tr>
+          <tr>
+            <td><span class="tag">&lt;p&gt;&lt;/p&gt;</span></td>
+            <td>This is where all of your paragraphs go!</td>
+            <td>Use <span class="small-tag">&lt;br&gt;</span> (our second self-closing tag) if you want to start sentences on a new line.</td>
+          </tr>
+          <tr>
+            <td><span class="tag">&lt;span&gt;&lt;/span&gt;</span></td>
+            <td>This is for those special words that just HAVE to be a different style or color.</td>
+            <td>*hint,hint* This is how I made all of those pretty tags pink in the middle of my sentences.</td>
+          </tr>
+          <tr>
+            <td><span class="tag">&lt;div&gt;&lt;/div&gt;</span></td>
+            <td>The very UN-semantic way of splitting up your page to design sections differently.</td>
+            <td>Try *not* to use this one unless you absolutely need to.</td>
+          </tr>
+          <tr>
+            <td><span class="tag">&lt;aside&gt;&lt;/aside&gt;</span></td>
+            <td>The a*side* information that doesn't really add "real" information to your page.</td>
+            <td>The perfect tag for quotes or things that don't aboslutely need to be present.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="css-style">
+      <h2>CSS Style</h2>
+      <table cellspacing="0">
+        <thead>
+          <th class="col-1">Property Name</th>
+          <th class="col-2">Description</th>
+          <th class="col-3">Additional Info</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="tag">color</span></td>
+            <td>For coloring your text.</td>
+            <td>Beautify with color names, rgb values, and hsl values.</td>
+          </tr>
+          <tr>
+            <td><span class="tag">background-color</span></td>
+            <td>For the, you know, background.</td>
+            <td>Same as color.</td>
+          </tr>
+          <tr>
+          <td><span class="tag">font-size</span></td>
+          <td>Need I say more?</td>
+          <td>Can be specified with both relative and absolute units.</td>
+          </tr>
+          <tr>
+            <td><span class="tag">font-family</span></td>
+            <td>Font style, just like a word processor.</td>
+            <td>There are many different styles to choose from on the line. Enter at your own risk.</td>
+          </tr>
+          <tr>
+            <td><span class="tag">border</span></td>
+            <td>Combine <span class="small-tag">border-width</span>, <span class="small-tag">border-style</span>, and <span class="small-tag">border-color</span> in one impressive package!</td>
+            <td>Choose from a semi-wide variety of border styles such as <span class="small-tag">solid</span>, <span class="small-tag">dotted</span>, and <span class="small-tag">dashed</span>!</td>
+          </tr>
+          <tr>
+            <td><span class="tag">border-radius</span></td>
+            <td>Rounds das corners.</td>
+            <td>Want a circle? Mix equal parts <span class="small-tag">height</span> and <span class="small-tag">width</span> with the same size radius. Ta-da!</td>
+          </tr>
+          <tr>
+            <td><span class="tag">font-weight</span></td>
+            <td>A fancy way to thicken your words, by weight.</td>
+            <td>Not to be confused with the inline element of <span class="small-tag">&lt;strong&gt;</span>, which also boldens your words.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <a href="#navbar">Back to top</a>
+    <p id="signature">laladyvankan</p>
+  </footer>
+</body>
+
+</html>
